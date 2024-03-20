@@ -1,37 +1,31 @@
 # .localhost
 
-.localhost is a command line tools to make isolated environtment for web development on Windows. This tools is packed
-with **Apache** and **MySQL** that you can install from **.localhost Dashboard**
+---
+## REPOSITORY MENU
+- [Contributing Guide](docs/CONTRIBUTING.md)
+- [Todos](docs/TODO.md)
+- [License](docs/LICENSE.md)
+- [Discord]()
+---
+
+.localhost is a command line tools to make isolated environment for web development on Windows. This tools is not packed with Apache, MySQL, or PHP. But, you can install it from [The Package Repository](https://github.com/indra87g/localhost-package-repo) or from **Dashboard**.
 
 ## Why .localhost ?
 - Fast
 - Isolated
 - Simple & Free
-- Minimalist Size (only 1MB)
-
+- Minimalist Size (2MB++. Apache, PHP, and MySQL is not included)
 
 ## Feature
 - Dashboard
-- Terminal
+- Terminal (ConEmu)
 
 ## Quick Start
 Download the latest version [here]()
 
-After downloading .localhost, you will only see 5 file and 3 folder. 
+- Open ```setup.bat```
+- Wait until the setup finished
+- Open ```dashboard.bat```
+- Enter 1 to activate Apache, 2 to activate MySQL
 
-**Wait What, Where Apache and MySQL?**
-
-I not bundled it with .localhost. But, dont worry. you can install it from Dashboard
-
-**What, dashboard?**
-
-Yeah, you can open the dashboard by double-clicking ```dashboard.bat``` file. After that, you will see the menu.
-
-**So, how to install Apache and MySQL?**
-
-Easy, you can install it by entering ```22. Download > 70. Download Starter Pack```and Wait after the process finished. Voila! now .localhost ready to use! Open the dashboard again and enter ```10. Start Apache``` and ```11. Start MySQL```.
-
-See [Documentation]() for more information
-
-## License
-.localhost is licensed under GNU General Public License v2
+This process is easy and fast, but i very recommend you to install it manually. See [Documentation]() for more information

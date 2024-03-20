@@ -12,7 +12,7 @@ echo =======================================
 echo.
 echo What's New ?
 echo * Apache and MySQL Control
-echo * Terminal
+echo * ConEmu based terminal
 echo * PHP Test
 echo See the full changelog in CHANGELOG.md
 echo.
@@ -22,15 +22,13 @@ echo 11. Start MySQL
 echo 12. Stop All
 echo.
 echo TOOLS MENU
-echo 20. PHP Test
-echo 21. Terminal
+echo 20. PHP Test                                    124. New Project
+echo 21. Terminal                                    
 echo 22. Download
-echo 23. Project Setup
+echo 23. Update
 echo.
 echo OPTIONAL MENU
-echo 90. Update Dashboard
-echo 91. Uninstall .localhost
-echo 92. 
+echo 90. Uninstall .localhost
 echo.
 echo 0. Refresh Dashboard 
 echo.
@@ -63,6 +61,19 @@ rem Start MySQL
 start mysql\bin\mysqld.exe --defaults-file="mysql\my.ini" --standalone --console
 Goto Menu
 
+:12
+rem Stop All
+start bin/kill.bat
+Goto Menu
+
+:13
+:14
+:15
+:16
+:17
+:18
+:19
+
 :20
 rem PHP Test
 start test-php.bat
@@ -81,13 +92,11 @@ echo Let's download something to increase
 echo your productivity.
 echo =======================================
 echo.
-echo 100. Download Starter Pack
+echo FRONT-END
+echo 100. phpMyAdmin
 echo.
-echo ADDITIONAL
-echo 101. Composer                                  124. Nodejs                   
-echo 102. HeidiSQL                                  125. VSCode
-echo 103. MongoDB
-echo 104. PostgreSQL
+echo BACK-END
+echo 101. Composer
 echo.
 echo 0. Back to Menu
 echo.
@@ -97,14 +106,14 @@ If "%Mode%"=="100" Goto 100
 If "%Mode%"=="0" Goto Menu
 
 :23
-rem Project Setup
+rem New Project
 echo =======================================
 echo Hey, %USERNAME%!
-echo Let's make some project
+echo Let's make some new project
 echo =======================================
 echo.
 echo FRONT-END
-echo 110. Blank HTML + CSS + JS
+echo 110. Starter HTML + CSS + JS
 echo 111. Portfolio Website
 echo.
 echo BACK-END
@@ -121,19 +130,42 @@ Set /P Mode=Choose option:
 If "%Mode%"=="110" Goto 110
 If "%Mode%"=="0" Goto Menu
 
-:100
-rem Download > Download Starter Pack
-echo Downloading starter pack (Apache + MySQL) > tmp\localhost_dllog.txt
-echo Starting... > tmp\localhost_dllog.txt
-echo Downloading Apache... > tmp\localhost_dllog.txt
-wget
-echo Downloading MySQL > tmp\localhost_dllog.txt
-wget
-echo Download success. Installing...
-echo Installed.
+:24
+:25
+:26
+:27
+:28
+:29
+:101
+rem Download > Composer
+echo Downloading composer
+echo Cloning composer from Github with Git...
+echo.
 pause
 Goto Menu
 
+:102
+:103
+:104
+:105
+:106
+:107
+:108
+:109
+:110
+rem New Project > Starter HTML + CSS + JS
+echo Starting new project in htdocs\project110
+cd htdocs
+md project110
+echo Done! Now is cloning template with Git...
+git clone
+echo Operation Finished!
+echo What i can do now ?
+echo - Go to htdocs\project110 and rename it
+echo - Start developing with your favourite code editor
+echo.
+pause
+Goto Menu
 
 :NotFound
 echo Function not found!
