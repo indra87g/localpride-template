@@ -4,7 +4,7 @@
 > <a href="docs/CONTRIBUTING.md">CONTRIBUTING</a> &middot;
 > <a href="docs/CHANGELOG.md">CHANGELOG</a> &middot;
 > <a href="docs/CREDITS.md">CREDITS</a> &middot;
-> <a href="https://discord.gg">DISCORD</a>
+> <a href="https://discord.gg/vrsPDzrYqp">DISCORD</a>
 
 ```A fast, isolated and extensible web development environment.```
 
