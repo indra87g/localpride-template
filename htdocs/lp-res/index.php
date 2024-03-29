@@ -5,8 +5,8 @@
     <title>Localpride</title>
 
 
-    <link href="lp-res/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="lp-res/img/favicon.png" rel="icon" type="image/png" />
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="public/img/favicon.png" rel="icon" type="image/png" />
 
 
   </head>
@@ -14,7 +14,7 @@
   <body>
   <nav id="navbar" class="navbar navbar-expand-lg navbar-danger bg-danger fixed-top shadow">
     <div class="container px-5">
-      <a class="navbar-brand" href="http://localpride.pro">Localpride</a>
+      <a class="navbar-brand" href="https://asterixtech.github.io">Localpride</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -22,14 +22,18 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="index.php">Home</a>
+            <a class="nav-link active" href="#hero">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="project.php">Project</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="toolbox.php">Toolbox</a>
+            <a class="nav-link" href="phpinfo.php">PHP Info</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localpride.pro/phpmyadmin">PHPMyAdmin</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">Documentation</a></li>
         </ul>
       </div>
     </div>
@@ -39,10 +43,6 @@
     <div class="container-fluid px-5">
       <div class="row gx-5 align-items-center justify-content-center">
         <div class="col-lg-8 col-xl-7 col-xxl-6">
-          <div class="text-center">
-            <p class="badge bg-primary">NEWS</p>
-            <marquee class="shadow" direction="left">Introducing Localpride v0.2.0! Development is now focused🔥🔥🔥</marquee>
-          </div>
           <div class="my-5 text-center text-xl-start">
             <h1 class="display-5 fw-bolder text-center">
               Welcome to Localpride Dashboard!

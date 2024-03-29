@@ -2,7 +2,7 @@
 <html data-bs-theme="dark">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Localpride</title>
+    <title>Localpride - Toolbox</title>
 
 
     <link href="lp-res/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -22,13 +22,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="index.php">Home</a>
+            <a class="nav-link" href="index.php">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="project.php">Project</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="toolbox.php">Toolbox</a>
+            <a class="nav-link active" href="phpinfo.php">Toolbox</a>
           </li>
         </ul>
       </div>
@@ -39,15 +39,11 @@
     <div class="container-fluid px-5">
       <div class="row gx-5 align-items-center justify-content-center">
         <div class="col-lg-8 col-xl-7 col-xxl-6">
-          <div class="text-center">
-            <p class="badge bg-primary">NEWS</p>
-            <marquee class="shadow" direction="left">Introducing Localpride v0.2.0! Development is now focused🔥🔥🔥</marquee>
-          </div>
           <div class="my-5 text-center text-xl-start">
             <h1 class="display-5 fw-bolder text-center">
-              Welcome to Localpride Dashboard!
+              Toolbox
             </h1>
-            <p class="text-center">Thanks for installing localpride. Now, we are friends</p>
+            <p class="text-center">Discover the localpride tools.</p>
           </div>
         </div>
       </div>
@@ -56,12 +52,15 @@
 
 
   <section class="container">
-   <h2>What's Next ?<h2>
-   <ul>
-    <li>Install package from dashboard</li>
-    <li>Create a new project</li>
-    <li>Read documentation and join our discord community</li>
-   </ul>
+    <h2>Built-In</h2>
+    <ul>
+      <li><a href="http://localpride.pro/phpmyadmin">PHPMyAdmin</a></li>
+      <li><a href="phpinfo.php">PHPInfo</a></li>
+    </ul>
+    <h2>By Localpride</h2>
+    <ul>
+      <li><a href="">None</a></li>
+    </ul>
   </section>
 
     <!-- JS Libraries -->
