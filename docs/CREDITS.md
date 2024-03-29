@@ -3,7 +3,7 @@
 ## Project Leader
 - [@indra87g](https://github.com/indra87g)
 
-## Supporter
+## Sponsor
 - [Admin & Member from IMPHNEN]()
 
 ## Software
@@ -11,6 +11,6 @@
 - [Zend Technologies](https://php.org), PHP
 - [MySQL AB](), MySQL
 - [Maximus5](), ConEmu
-- [Leo Khoa](), Web-Based Dashboard
+- [Leo Khoa](), Project Page in ```localhost``
 - [Kay Vogelgesang]() & [Carsten Wiedmann](), XAMPP Setup Script
 - [NHUtils](https://nhutils.ru), nhcolor
