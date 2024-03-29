@@ -2,7 +2,6 @@
 echo LOCALPRIDE STATUS
 echo Localpride CLI v0.2.0
 echo.
-cd ../
 echo ==== PHP
 php\php --version
 echo ====
@@ -12,6 +11,9 @@ echo ====
 echo ==== MySQL
 mysql\bin\mysqld --version
 echo ====
+pause
+cd ../
+dashboard
 
 ::IF "%1" EQU "setenv" (
 ::    echo LOCALPRIDE TERMINAL

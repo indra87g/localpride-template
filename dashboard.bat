@@ -56,7 +56,8 @@ Goto Menu
 
 :12
 rem Stop All
-start bin\kill.bat
+cd bin
+kill
 Goto Menu
 
 :13
@@ -69,23 +70,23 @@ Goto Menu
 
 :20
 rem PHP Test
-start bin\phptest.bat
-Goto Menu
+cd bin
+phptest
 
 :21
 rem Status
-start bin\status.bat
-Goto Menu
+cd bin
+status
 
 :22
 rem Download
-start bin\download.bat
-Goto Menu
+cd bin
+download
 
 :23
 rem New Project
-start bin\newproject.bat
-Goto Menu
+cd bin
+project
 
 :24
 :25
@@ -94,9 +95,6 @@ Goto Menu
 :28
 :29
 :30
-
-:90
-start bin\setup.bat
 
 :91
 :92

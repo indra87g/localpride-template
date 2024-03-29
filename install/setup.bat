@@ -35,9 +35,32 @@ pause
 Goto End
 
 :End
-echo [4/4] Finished
+echo [4/4] Finishing
+Set /P Mode=+ Do you want to delete file archive or keep them ? [10/Delete 20/Keep]
+If "%Mode%"=="10" Goto DeleteArchive
+If "%Mode%"=="20" Goto KeepArchive
 echo + Operation success. Now you can control localpride from 'dashboard.bat'
-echo + Dont forget to read the documentation (https://indra87g.github.io/lp-doc)
+echo + Dont forget to read the documentation (https://indra87g.github.io/lp-docs)
 echo + Thanks for using this tools !
 echo.
 pause
+
+:DeleteArchive
+cd bin
+echo Are you sure to delete "apache.7z", "mysql.7z", and "php.7z" ?
+echo Please confirm by click "ENTER" or you can exit from terminal
+pause
+echo Ok, as you need. After the archive deleted, dont cry, OK?
+echo Deleting...
+del apache.7z
+del mysql.7z
+del php.7z
+Goto End
+
+:KeepArchive
+cd bin
+echo Moving the archive to "C:\Windows\Temp"...
+move apache.7z %TEMP%
+move mysql.7z %TEMP%
+move php.7z %TEMP
+Goto End
